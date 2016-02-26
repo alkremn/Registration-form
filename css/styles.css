@@ -13,7 +13,6 @@ body {
 
 /* Section Styles */
 
-
 .sec-header {
 	width: 90%;
 	margin: auto;
@@ -28,6 +27,7 @@ body {
 	text-align: center;
 }
 .main-header h2 {
+	margin: 0;
 	text-transform: uppercase;
 	color: white;
 	font-size: 2em;
@@ -36,10 +36,8 @@ body {
 .sec-header {
 	text-align: center;
 }
-h2 {
-	margin-top: 0;
-	padding: 30px 0 15px 0;
-	font-size: 1.65em;
+.sec-header h2 {
+	margin-top: 40px;
 }
 .sec-header p {
 	font-size: 1.3em;
@@ -48,15 +46,22 @@ h2 {
 .last-div-empty-header {
 	width: 100%;
 	height: 12px;
-	margin: 40px auto;
+	margin: 50px auto 20px;
 	border-top: 5px solid #2e4451;
 	border-bottom: 3px solid #2e4451;
 }
 .contact-info {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	border-bottom: 3px solid #2e4451;
 	padding-bottom: 30px; 
+}
+legend {
+	margin-bottom: 20px;
+	margin-top: 0;
+	padding: 30px 0 15px 0;
+	font-size: 1.65em;
+	font-weight: 700;
 }
 .contact-info h2 {
 	padding-bottom: 25px;
@@ -154,11 +159,9 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button  {
 	-webkit-appearance: none;
 }
-.newsletter {
-	padding: 0 20px;
-}
 .newsletter p,
-.otherTopic p {
+.otherTopic p,
+#textareaLabel {
 	padding-top: 20px;
 	font-weight: 500;
 	font-size: 1.4em;
@@ -177,6 +180,9 @@ input[type="checkbox"] {
 	display: block;
 	padding-left: 35px;
 	position: relative;
+}
+#textareaLabel {
+	width: 100%;
 }
 label:before {
 	margin-right: 15px;
@@ -217,7 +223,7 @@ input[type="radio"]:checked + label:before {
 	border: 2px solid #2e4451;
 }
 .otherTopic {	
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 .otherTopic p {
@@ -266,6 +272,11 @@ footer {
 
 @media only screen and (min-width: 760px){
 
+.last-div-empty-header,
+.contact-info,
+.otherTopic {
+	width: 90%;
+}
 .sec-header,
 .newsletter,
 form {
